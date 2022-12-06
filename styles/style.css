@@ -1,5 +1,15 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+/* 숨김 콘텐츠 */
+.a11y-hidden {
+  position: absolute;
+  /* top: -9999em; */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  /* clip: rect(0 0 0 0); */
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
 /* 기본 스타일 */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -28,7 +38,7 @@ body {
 .header {
   background: #fff;
   padding: 0 30px;
-  height: 15vh;
+  /* height: 15vh; */
   border-radius: 0 0 15px 15px;
   position: relative;
 }
