@@ -36,19 +36,26 @@ body {
 }
 /* 텍스트 링크 모임 */
 .member {
-  /* background-color: aqua; */
   text-align: right;
   padding: 4px 0;
+  /* position 속성을 활용해서 오른쪽 영역 수정 */
+  /* position: relative;
+  left: 10px; */
+  /* transform 속성을 활용해서 오른쪽 10px 이동하기 */
+  transform: translateX(10px);
 }
 .member li {
-  /* background-color: pink; */
   display: inline-block;
 }
 .member a{
-  background-color: coral;
   padding: 6px 10px;
   display: inherit;
+  text-transform: uppercase;
 }
+/* 마지막 li에 포함된 a 요소를 선택하여 padding-right 제거 */
+/* .member li:last-child a{
+  padding-right: 0px;
+} */
 .divider{
   margin-right: 4px;
 }
