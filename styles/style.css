@@ -92,12 +92,12 @@ body {
   border-radius: 0 0 5px 5px;
   padding-left: 230px;
   height: 47px;
-  position: relative;
+  /* position: relative; */
 }
 
-.menu > li:nth-child(-n+3) {
+/* .menu > li:nth-child(-n+3) {
   position: relative;
-}
+} */
 .menu-item {
   /* position: relative; */
   float: left;
@@ -123,19 +123,20 @@ body {
 }
 .sub-menu {
   position: absolute;
-  top: 47px;
+  /* top: 47px; */
   padding: 4px 0;
   display: none;
 }
-.menu-html, .menu-css, .menu-standards {
+/* .menu-html, .menu-css, .menu-standards {
   left: 0;
 }
+*/
 .menu-accessibility, .menu-qna, .menu-archive {
   right: 0;
 }
 .is-active .sub-menu {
   display: block;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 .sub-menu li {
   display: inline-block;
