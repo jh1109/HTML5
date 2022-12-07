@@ -77,7 +77,7 @@ body {
 }
 /* 메인 메뉴 */
 .navigation {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .menu {
   border-top: 2px solid currentColor;
@@ -122,9 +122,9 @@ body {
   border-top: 2px solid #212121;
 }
 .sub-menu {
-  background-color: pink;
   position: absolute;
   top: 47px;
+  padding: 4px 0;
   display: none;
 }
 .menu-html, .menu-css, .menu-standards {
@@ -139,7 +139,6 @@ body {
 }
 .sub-menu li {
   display: inline-block;
-  background-color: gold;
 }
 .sub-menu a::before {
   content: "\e802";
@@ -159,6 +158,13 @@ body {
 }
 .sub-menu a:hover::before, .sub-menu a:focus::before {
   content: "\e800"
+}
+.sub-menu a{
+  display: inline-block;
+  padding: 6px 0;
+}
+.sub-menu a:hover, .sub-menu a:focus {
+  color: #f00;
 }
 /* 비주얼 */
 .visual {
