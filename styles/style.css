@@ -230,7 +230,7 @@ body {
   animation-delay: 1000ms;
 }
 .visual-text {
-  /* position: absolute; */
+  position: absolute;
   font-family: Georgia, 'Times New Roman', Times, serif;
   animation-name: moveEffect;
   animation-duration: 1000ms;
