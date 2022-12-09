@@ -2,7 +2,7 @@
 @import url(./reset.css);
 @import url(./fonts.css);
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend{
   position: absolute;
   /* top: -9999em; */
   width: 1px;
@@ -238,22 +238,21 @@ body {
   animation-fill-mode: forwards;
   /* animation: moveEffect 1000ms ease-in-out forwards; */
   /* display: inline-block; */
-  position: relative;
   z-index: 1;
 }
 /* 메인 */
 .main {
-  background: lightgreen;
-  height: 50vh;
+  background: #fff;
+  min-height: 450px;
   display: flow-root;
-  padding: 0 15px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
 }
 .group {
   margin: 0 15px;
   float: left;
 }
 .group1 {
-  background-color: violet;
   width: 250px;
 }
 .group2 {
@@ -264,7 +263,87 @@ body {
   background-color: gold;
   width: 190px;
 }
-
+/* 로그인 영역 */
+.login {
+  border-radius: 5px;
+  /* background: linear-gradient(to left, orange, orangered); */
+  background: orange radial-gradient(circle at right top, orange, orangered);
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 10px;
+}
+.login-title {
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.login-form {
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+.login-form fieldset {
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
+}
+.user-email, .user-pw {
+  margin-bottom: 5px;
+}
+.login-form label {
+  display: inline-block;
+  width: 55px;
+}
+.login-form input {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
+}
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 53px;
+  background-color: orangered;
+  color: #fff;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.sign {
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.sign a{
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+.sign a::before {
+  content: "\e803";
+  font-family: 'fontello';
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  color: orangered;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* 슬로건 */
 .slogan {
   background: skyblue;
