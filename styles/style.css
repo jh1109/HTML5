@@ -242,9 +242,9 @@ body {
 }
 /* 메인 */
 .main {
+  display: flow-root;
   background: #fff;
   min-height: 450px;
-  display: flow-root;
   padding: 30px 15px;
   border-radius: 15px 15px 0 0;
 }
@@ -256,11 +256,9 @@ body {
   width: 250px;
 }
 .group2 {
-  background-color: salmon;
   width: 380px;
 }
 .group3 {
-  background-color: gold;
   width: 190px;
 }
 /* 로그인 영역 */
@@ -322,6 +320,9 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+/* .sign li {
+  display: inline-block;
+} */
 .sign a{
   display: block;
   padding: 6px 0;
@@ -343,6 +344,95 @@ body {
   margin-left: .2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+.term-title {
+  font-size: 15px;
+  font-weight: 700;
+  /* margin-bottom: 13px; */
+}
+.term-list {
+  margin-top: 10px;
+  background: yellow;
+}
+.term-list div {
+  background: pink;
+  margin-top: 10px;
+  display: flow-root;
+}
+.term-list-subject {
+  color: #296897;
+  font-weight: 500;
+}
+.term-list-subject, .term-list-brief {
+  background: lime;
+  float: right;
+  width: 145px;
+}
+.term-list-thumbnail {
+  background: purple;
+  float: left;
+}
+.term-list-thumbnail img {
+  vertical-align: middle;
+}
+.term-list-brief {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.cross .term-list-subject, .cross .term-list-brief {
+  float: left;
+}
+.cross .term-list-thumbnail {
+  float: right;
+}
+/* 검색 폼 */
+.search-form {
+  border: 1px solid #aaa;
+  border-radius: 15px 15px 0 0;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding: 15px 25px 10px 25px;
+}
+.search-form-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: space-evenly; */
+}
+.form-group {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-right: 10px;
+}
+.form-group-label {
+  white-space: nowrap;
+  margin-right: 10px;
+}
+.form-group-input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 24px;
+  padding: 1px 1px 1px 5px;
+  flex-grow: 1;
+  /* min-width: 0; */
+}
+.search-button {
+  white-space: nowrap;
+  background-color: #000;
+  color: #fff;
+  height: 24px;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 1.2rem;
 }
 /* 슬로건 */
 .slogan {
