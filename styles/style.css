@@ -536,6 +536,73 @@ body {
   right: -8px;
   padding: 8px;
 }
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-effect {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+}
+.accent-color {
+  color: #e85e2c;
+}
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.event {
+  border-bottom: 1px solid #aaa;
+}
+.event-title {
+  display: inline-block;
+}
+.event-button-wrapper {
+  overflow: hidden;
+  height: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 5px;  
+  float: right;
+}
+.event-button {
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 18px 0 0 0;
+  background: url(./images/back_forward.png) no-repeat;
+}
+.event-button-next {
+  background-position: -36px 0;
+}
+.event-thumbnail, .event-brief {
+  margin-top: 10px;
+}
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+.event-brief {
+  line-height: 1.5;
+}
+.related {
+  margin-top: 10px;
+}
+.related-list {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 27px;
+  overflow: hidden;
+  line-height: 1.8;
+  padding: 0px 20px;
+  transition: height 400ms 0ms ease-in-out, padding 400ms 400ms ease-in-out;
+}
+.related-list:hover, .related-list:focus {
+  height: 147px;
+  padding: 10px 20px;
+}
 /* 슬로건 */
 .slogan {
   background: skyblue;
