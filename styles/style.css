@@ -1,6 +1,6 @@
+@import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
-@import url(./fonts.css);
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend{
   position: absolute;
@@ -356,14 +356,11 @@ body {
 .term-title {
   font-size: 15px;
   font-weight: 700;
-  /* margin-bottom: 13px; */
 }
-.term-list {
+/* .term-list {
   margin-top: 10px;
-  background: yellow;
-}
+} */
 .term-list div {
-  background: pink;
   margin-top: 10px;
   display: flow-root;
 }
@@ -372,15 +369,14 @@ body {
   font-weight: 500;
 }
 .term-list-subject, .term-list-brief {
-  background: lime;
   float: right;
   width: 145px;
 }
 .term-list-thumbnail {
-  background: purple;
   float: left;
 }
 .term-list-thumbnail img {
+  /* display: block; */
   vertical-align: middle;
 }
 .term-list-brief {
@@ -403,7 +399,7 @@ body {
 .search-form-inner {
   display: flex;
   flex-flow: row nowrap;
-  /* justify-content: space-evenly; */
+  align-items: center;
 }
 .form-group {
   flex-grow: 1;
@@ -423,8 +419,8 @@ body {
   height: 24px;
   padding: 1px 1px 1px 5px;
   flex-grow: 1;
-  width: 100%
-  /* min-width: 0; */
+  width: 100%;
+  min-width: 0;
 }
 .search-button {
   /* white-space: nowrap; */
@@ -472,13 +468,13 @@ body {
   justify-content: space-between;
 }
 .board-list a {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .board-list time {
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   margin-left: 10px;
 }
 .board-more {
