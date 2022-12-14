@@ -558,7 +558,7 @@ body {
   display: inline-block;
 }
 .event-button-wrapper {
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 20px;
   display: flex;
   flex-flow: row nowrap;
@@ -570,7 +570,6 @@ body {
   width: 19px;
   height: 18px;
   border: 0;
-  padding: 18px 0 0 0;
   background: url(./images/back_forward.png) no-repeat;
 }
 .event-button-next {
