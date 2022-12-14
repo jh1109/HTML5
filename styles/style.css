@@ -604,6 +604,88 @@ body {
   height: 147px;
   padding: 10px 20px;
 }
+/* 인기 사이트 */
+.margin-top-default {
+  margin-top: 20px;
+}
+.margin-top-normal {
+  margin-top: 10px;
+}
+.favorite {
+  position: relative;
+}
+.favorite-list {
+  /* overflow: hidden; */
+  list-style-type: none;
+}
+.favorite-list li {
+  margin-top: 10px;
+  counter-increment: number;
+  /* display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between; */
+  position: relative;
+}
+/* .favorite-list a{
+  flex-grow: 1;
+} */
+.favorite-list li::before {
+  content: counter(number);
+  background-color: #aaa;
+  color: #fff;
+  padding: 1px 6px;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 1.5em;
+  text-align: center;
+  line-height: 1.5;
+}
+.up, .stop, .down {
+  width: 9px;
+  height: 11px;
+  display: inline-block;
+  background: lime url(./images/rank.png) no-repeat;
+  /* margin-left: auto; */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  /* transform: translateY(50%); */
+  margin-top: -6px;
+}
+.stop {
+  background-position: 0 48%;
+}
+.down {
+  background-position: 0 100%;
+}
+/* .no1 a {
+  font-size: 2em;
+} */
+/* .no1::before {
+  content: "1";
+}
+.no2::before {
+  content: "2";
+}
+.no3::before {
+  content: "3";
+}
+.no4::before {
+  content: "4";
+} */
+
+.favorite-more {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  line-height: 18px;
+  padding: 3px;
+}
+
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
