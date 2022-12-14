@@ -552,6 +552,7 @@ body {
 }
 .event {
   border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
 }
 .event-title {
   display: inline-block;
