@@ -558,22 +558,19 @@ body {
   display: inline-block;
 }
 .event-button-wrapper {
-  /* overflow: hidden; */
-  height: 20px;
+  float: right;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
   gap: 5px;  
-  float: right;
 }
 .event-button {
   width: 19px;
   height: 18px;
   border: 0;
-  background: url(./images/back_forward.png) no-repeat;
+  background: url(./images/back_forward.png) no-repeat 0 0;
 }
 .event-button-next {
-  background-position: -36px 0;
+  background-position: 100% 0;
 }
 .event-thumbnail, .event-brief {
   margin-top: 10px;
@@ -614,16 +611,15 @@ body {
   position: relative;
 }
 .favorite-list {
-  /* overflow: hidden; */
   list-style-type: none;
+  counter-reset: number;
 }
 .favorite-list li {
   margin-top: 10px;
   counter-increment: number;
   /* display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between; */
+  align-items: center; */
   position: relative;
 }
 /* .favorite-list a{
@@ -633,26 +629,23 @@ body {
   content: counter(number);
   background-color: #aaa;
   color: #fff;
-  padding: 1px 6px;
   font-size: 1.2rem;
   margin-right: 5px;
   border-radius: 3px;
   display: inline-block;
-  width: 1.5em;
+  width: 1.3em;
   text-align: center;
-  line-height: 1.5;
 }
 .up, .stop, .down {
   width: 9px;
   height: 11px;
   display: inline-block;
-  background: lime url(./images/rank.png) no-repeat;
-  /* margin-left: auto; */
+  background: url(./images/rank.png) no-repeat;
   position: absolute;
   right: 0;
   top: 50%;
-  /* transform: translateY(50%); */
   margin-top: -6px;
+  /* transform: translateY(50%); */
 }
 .stop {
   background-position: 0 48%;
@@ -660,9 +653,6 @@ body {
 .down {
   background-position: 0 100%;
 }
-/* .no1 a {
-  font-size: 2em;
-} */
 /* .no1::before {
   content: "1";
 }
@@ -694,18 +684,17 @@ body {
   bottom: -25px;
   left: 35px;
   width: 110px;
-  height: 83px;
   text-align: center;
   line-height: 83px;
 }
 .slogan-title::before {
   content: "";
+  background: url(./images/coffee.png) no-repeat;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(./images/coffee.png) no-repeat 0 0;
 }
 .slogan-content {
   color: #a09784;
@@ -723,11 +712,10 @@ body {
   background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%);
 }
 .footer-inner {
-  padding: 20px 0;
+  padding: 15px 0;
   display: flex;
   flex-flow: row nowrap;
   gap: 20px;
-  /* justify-content: space-around; */
 }
 .footer-logo {
   width: 150px;
@@ -750,8 +738,8 @@ body {
   display: block;
   padding: 6px 10px;
 }
-.address, .copyright {
+.address {
   display: block;
-  font-size: 1.3rem;
-  margin-top: 10px;
+  font-size: 1.4rem;
+  margin: 15px 0 5px 0;
 }
