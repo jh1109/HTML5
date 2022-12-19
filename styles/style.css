@@ -345,9 +345,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* 유효성 검사 배너 */
+.validation__list {
+  margin-top: 16px;
+}
+.validation__list li:nth-child(-n+1){
+  margin-bottom: 12px;
+}
+.validation__list a {
+  display: block;
+  border: 1px solid #aaa;
+  background: url(./images/validation_icon.png) no-repeat 16px 50%, #ccc linear-gradient(to bottom, #ccc, #eee);
+  border-radius: 20px;
+  padding: 0 16px 0 36px;
+  line-height: 33px;
+  cursor: pointer;
+}
+.validation__list a:hover, .validation__list a:focus {
+  color: #f00;
+}
 /* 웹 관련 용어 */
 .term {
-  margin-top: 20px;
+  margin-top: 16px;
   border: 1px solid #aaa;
   border-radius: 5px;
   padding: 10px 15px;
